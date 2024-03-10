@@ -14,4 +14,4 @@ jobs:
         run: echo "Building..."
 
       - name: Deployment Step
-        run: ssh ubuntu@54.83.75.216 "cd /path/to/app && git pull && npm install && npm run build"
+        run: ssh ubuntu@54.174.134.96 "cd /path/to/app && git pull && npm install && npm run build"
