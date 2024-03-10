@@ -1,0 +1,17 @@
+name: Frontend Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Build Step
+        run: echo "Building..."
+
+      - name: Deployment Step
+        run: ssh ubuntu@54.83.75.216 "cd /path/to/app && git pull && npm install && npm run build"
